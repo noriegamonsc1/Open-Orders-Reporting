@@ -1,8 +1,9 @@
 # Ignore the entire Config folder where secrets are stored
 00.Config/
+00.Notebooks/
 
-# Alternatively, if you just want to ignore secrets.json specifically
-# /00.Config/secrets.json
+# ignore secrets.json specifically
+/00.Config/secrets.json
 
 # Ignore Python bytecode and cache
 *.pyc
