@@ -1,0 +1,20 @@
+# Ignore the entire Config folder where secrets are stored
+00.Config/
+
+# Alternatively, if you just want to ignore secrets.json specifically
+# /00.Config/secrets.json
+
+# Ignore Python bytecode and cache
+*.pyc
+__pycache__/
+
+# Ignore virtual environment folders
+.env/
+env/
+
+# Optionally ignore other environment-specific files (like Jupyter Notebook checkpoints)
+.ipynb_checkpoints/
+
+# Optionally ignore logs or temporary files (if applicable)
+*.log
+*.tmp
