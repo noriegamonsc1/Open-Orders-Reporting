@@ -1,5 +1,5 @@
-import get_date
-import get_paths
+from . import get_date
+from . import get_paths
 import os
 import pandas as pd
 
@@ -33,3 +33,25 @@ class Reports:
         paths_list = get_paths.match_re(pattern, file_paths_list)
 
         return paths_list
+    
+def get_report_paths(latest_files):
+    """
+    Retrieve the paths of various report files from the latest_files dictionary.
+
+    Parameters:
+    ----------
+    latest_files : dict
+        A dictionary containing folder names as keys and their latest file paths as values.
+
+    Returns:
+    -------
+    dict
+        A dictionary mapping descriptive variable names to their corresponding file paths.
+    """
+    return {
+        'domestics': latest_files['folder_domestics'],
+        'containers': latest_files['folder_containers'],
+        '3PLStyles': latest_files['folder_3PLStyles'],
+        'stores': latest_files['folder_stores'],
+        'ds': latest_files['folder_ds'],
+    }

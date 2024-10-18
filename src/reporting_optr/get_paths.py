@@ -1,5 +1,5 @@
 import os
-import get_date
+from . import get_date
 import re
 
 
