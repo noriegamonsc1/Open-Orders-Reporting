@@ -1,0 +1,24 @@
+# Ignore the entire Config folder where secrets are stored
+config/
+notebooks/
+
+# ignore secrets.json specifically
+/config/secrets.json
+
+# Ignore Python bytecode and cache
+*.pyc
+__pycache__/
+
+# Ignore virtual environment folders
+.env/
+env/
+
+# Optionally ignore other environment-specific files (like Jupyter Notebook checkpoints)
+.ipynb_checkpoints/
+
+# Optionally ignore logs or temporary files (if applicable)
+*.log
+*.tmp
+
+build/
+*.egg-info/
